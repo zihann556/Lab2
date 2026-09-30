@@ -1,1 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #b8d8ff;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+header h1 {
+    color: #355c9a;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    color: #355c9a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main */
+
+main {
+    padding: 20px;
+}
+
+/* Bio Section */
+
+.bio-hero {
+    background-color: #ffd6e8;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.bio-hero h2 {
+    margin-bottom: 10px;
+}
+
+/* Cards */
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    flex-basis: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #d7e8ff;
+}
+
+.card h3 {
+    color: #e273a7;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect */
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+
+footer {
+    background-color: #b8d8ff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+
+}
